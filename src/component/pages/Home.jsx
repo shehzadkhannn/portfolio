@@ -5,7 +5,7 @@ const Home = () => {
     <div className="text-white mb-10 md:mb-40 flex flex-col-reverse px-5 justify-center items-center lg:flex-row ">
       <div className="mt-5 md:mt-1">
         <p className="bg-gray-800 px-5 py-3 rounded-4xl inline border-2 border-gray-400  ">
-          Hillo!
+          Hello!
         </p>
 
         <div className="mt-10">
