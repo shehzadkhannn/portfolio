@@ -24,7 +24,7 @@ function ZoomIn({ children }) {
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ease-out ${
+      className={`transition-all duration-300 ease-out ${
         show ? "opacity-100 scale-100" : "opacity-0 scale-75"
       }`}
     >

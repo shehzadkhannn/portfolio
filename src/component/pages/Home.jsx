@@ -49,7 +49,7 @@ const Home = () => {
         <ZoomIn>
           {" "}
           <img
-            className="  shrink-0 rounded-full object-cover h-80 w-80 md:h-100 md:w-100 lg:h-150 lg:w-150"
+            className="  shrink-0 rounded-full object-cover h-60 w-60 md:h-100 md:w-100 lg:h-150 lg:w-150"
             src={Profile}
             alt="profile pic"
           />

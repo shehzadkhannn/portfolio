@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="flex justify-between px-8 rounded-3xl py-8 items-center bg-gray-900 border-t-2 border-amber-100 ">
+    <div className="flex justify-between px-4 md:px-8 rounded-3xl py-8 items-center bg-gray-900 border-t-2 border-amber-100 ">
       <div className="flex flex-col w-1/2">
         <h1 className="text-orange-500 md:text-lg text:sm">Muhammad Shehzad</h1>
         <p className="text-gray-400 text-xs md:text-sm">
