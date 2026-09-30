@@ -1,0 +1,38 @@
+import { useEffect, useRef, useState } from "react";
+
+function FadeIn({ children }) {
+  const ref = useRef(null);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShow(entry.isIntersecting);
+      },
+      {
+        threshold: 0.2,
+      },
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 ease-out ${
+        show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {children}
+    </div>
+  );
+}
+
+export default FadeIn;
