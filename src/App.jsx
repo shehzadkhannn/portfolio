@@ -43,6 +43,7 @@ const App = () => {
           <Contact />
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
