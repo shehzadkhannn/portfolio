@@ -2,10 +2,10 @@ import Shazy from "../../assets/shaz2.jpeg";
 import ZoomIn from "../animation/ZoomIn";
 const About = () => {
   return (
-    <div className="flex flex-col mb-10 md:mb-40 lg:flex-row text-white px-13 justify-center items-center">
+    <div className="flex flex-col mb-10 md:mb-40 lg:flex-row text-white px-5 justify-center items-center">
       {" "}
       <img
-        className="  shrink-0 md:rounded-full rounded-3xl object-cover h-60 w-60 md:h-100 md:w-100 lg:h-150 lg:w-150 m-7 border-7 border-orange-500 shadow-[0_0_20px_rgba(255,255,255,0.7)]"
+        className="  shrink-0 md:rounded-full rounded-3xl object-cover h-70 w-full md:h-100 md:w-100 lg:h-150 lg:w-150 m-7 border-7 border-orange-500 shadow-[0_0_20px_rgba(255,255,255,0.7)]"
         src={Shazy}
         alt="profile pic"
       />
@@ -31,7 +31,7 @@ const About = () => {
           </p>
         </ZoomIn>
         {/* this is card for nmbr name etc */}
-        <div className="grid grid-cols-1 md:grid-cols-2 w-full bg-gray-800 items-center p-8 mt-6 rounded-2xl gap-15 border-2 border-gray-400 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full bg-gray-800 items-center p-5 mt-6 rounded-2xl gap-15 border-2 border-gray-400 ">
           <ZoomIn>
             {" "}
             <div>
