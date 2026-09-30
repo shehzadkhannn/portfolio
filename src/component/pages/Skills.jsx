@@ -37,8 +37,8 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-center items-center mb-40 w-full">
-      <div className="flex flex-col items-center justify-center mt-25 gap-10">
+    <div className="flex flex-col justify-center items-center mb-10 md:mb-40 w-full">
+      <div className="flex flex-col items-center justify-center md:mt-25 mt-8 gap-10">
         <h1 className="font-bold text-5xl">
           My Work <em className="text-orange-500"> Skills </em>
         </h1>

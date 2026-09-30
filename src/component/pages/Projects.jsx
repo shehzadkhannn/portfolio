@@ -43,18 +43,18 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center mt-20 mb-20">
+    <div className="flex flex-col items-center justify-center md:mt-20 md:mb-20 mb-10 mt-10">
       <h1 className=" lg:text-5xl md:text-4xl text-3xl font-bold">
         Look at my <em className="text-orange-500"> Portfolio </em>
       </h1>
-      <p className="lg:px-50 md:px-20 px-10 py-7 md:text-lg text-sm text-gray-300">
+      <p className="lg:px-50 md:px-20 px-5 py-7 md:text-lg text-sm text-gray-300">
         I’m a Front-End Developer focused on creating responsive and interactive
         websites using React.js, JavaScript, HTML, CSS, and Tailwind CSS. This
         portfolio is designed to showcase my real-world projects, demonstrate my
         problem-solving and frontend development skills, and help potential
         clients and employers understand what I can build.
       </p>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 p-10  ">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 p-5  ">
         {Proj.map((proj) => (
           <div
             key={proj.projName}
