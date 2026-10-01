@@ -21,7 +21,7 @@ const About = () => {
         </ZoomIn>
         <ZoomIn>
           {" "}
-          <p className="mt-10 text-gray-300  lg:text-lg md:text-base  text-sm">
+          <p className="mt-10 text-gray-300  lg:text-lg md:text-base  text-sm ">
             I’m a Frontend Developer passionate about creating modern,
             responsive, and engaging web experiences with React.js and Tailwind
             CSS. I enjoy building clean user interfaces, reusable components,

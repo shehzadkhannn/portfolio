@@ -37,7 +37,7 @@ const Contact = () => {
   ];
   return (
     <div className="flex w-full justify-center px-4 py-30 ">
-      <div className="bg-black lg:w-2/3  md:py-20 w-full px-3 py-15 lg:py-20 gap-5 flex flex-col rounded-4xl  md:shadow-[0_0_15px_white] shadow-[0_0_8px_white]">
+      <div className="bg-black lg:w-full  md:py-20 w-full px-3 py-15  gap-5 flex flex-col rounded-4xl  md:shadow-[0_0_15px_white] shadow-[0_0_8px_white]">
         {Card.map((contact) => (
           <ZoomIn>
             {" "}

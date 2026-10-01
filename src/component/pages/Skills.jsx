@@ -58,7 +58,7 @@ const Skills = () => {
           </p>
         </ZoomIn>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 box-border  w-full lg:px-30 md:px-20 px-5 mt-10 md:mt-20 ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 box-border  w-full  px-5 mt-10 md:mt-20 ">
         {material.map((skill) => (
           <ZoomIn>
             {" "}
