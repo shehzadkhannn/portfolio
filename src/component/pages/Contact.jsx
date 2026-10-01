@@ -5,63 +5,56 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
+import ZoomIn from "../animation/ZoomIn";
 const Contact = () => {
+  const Card = [
+    {
+      liveurl: "https://wa.me/923473125155",
+      icon: <FaWhatsapp size={20} />,
+      other: "+923473125155",
+    },
+    {
+      liveurl: "tel:+923473125155",
+      icon: <FaPhone size={20} className="rotate-90" />,
+      other: "+923473125155",
+    },
+    {
+      liveurl: "mailto:shehzadkhanagra@gmail.com",
+      icon: <FaEnvelope size={20} />,
+      other: "shehzadkhanagra@gmail.com",
+    },
+    {
+      liveurl: "https://github.com/shehzadkhannn",
+      icon: <FaGithub size={20} />,
+      other: "shehzadkhannn",
+    },
+    {
+      liveurl:
+        "https://www.linkedin.com/in/muhammad-shehzad-b76005435/?isSelfProfile=true",
+      icon: <FaLinkedin size={20} />,
+      other: "MUHAMMAD SHEHZAD",
+    },
+  ];
   return (
     <div className="flex w-full justify-center px-4 py-30 ">
-      <div className="bg-black lg:px-40 md:px-30 md:py-20 px-15 py-15 lg:py-20 gap-10 flex flex-col rounded-4xl  shadow-[0_0_15px_orange] ">
-        <div>
-          {" "}
-          <a
-            className="hover:underline hover:text-orange-500 flex items-center justify-center gap-2 whitespace-nowrap"
-            href="https://wa.me/923473125155"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaWhatsapp size={20} />
-            <span> +923473125155</span>
-          </a>
-        </div>
-
-        <div>
-          <a
-            href="tel:+923473125155"
-            className="flex items-center justify-center gap-2 whitespace-nowrap hover:underline hover:text-orange-500"
-          >
-            <FaPhone size={20} className="rotate-90" />
-            <span>+923473125155</span>
-          </a>
-        </div>
-        <div>
-          <a
-            href="mailto:shehzadkhanagra@gmail.com"
-            className="flex items-center justify-center gap-2 whitespace-nowrap text-sm hover:underline hover:text-orange-500"
-          >
-            <FaEnvelope size={20} />
-            <span> shehzadkhanagra@gmail.com</span>
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://github.com/shehzadkhannn"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 whitespace-nowrap hover:underline hover:text-orange-500"
-          >
-            <FaGithub size={20} />
-            <span> shehzadkhannn</span>
-          </a>
-        </div>
-        <div>
-          <a
-            href="www.linkedin.com/in/muhammad-shehzad-b76005435"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 whitespace-nowrap hover:underline hover:text-orange-500"
-          >
-            <FaLinkedin size={20} />
-            <span>MUHAMMAD SHEHZAD</span>
-          </a>
-        </div>
+      <div className="bg-black lg:w-2/3  md:py-20 w-full px-3 py-15 lg:py-20 gap-5 flex flex-col rounded-4xl  md:shadow-[0_0_15px_white] shadow-[0_0_8px_white]">
+        {Card.map((contact) => (
+          <ZoomIn>
+            {" "}
+            <div className=" key={contact.other} px-3 bg-gray-900 w-full rounded-2xl py-3 md:shadow-[0_0_10px_white] shadow-[0_0_7px_white] hover:bg-gray-800">
+              {" "}
+              <a
+                className="hover:underline hover:text-orange-500 flex items-center justify-center gap-2 whitespace-nowrap"
+                href={contact.liveurl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {contact.icon}
+                <span> {contact.other}</span>
+              </a>
+            </div>
+          </ZoomIn>
+        ))}
       </div>
     </div>
   );

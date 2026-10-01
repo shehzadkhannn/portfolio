@@ -47,7 +47,7 @@ const NavBar = () => {
         onClick={() => {
           setIsOpen(!IsOpen);
         }}
-        className="md:hidden bg-gray-900 p-2 rounded-xl cursor-pointer"
+        className="md:hidden bg-gray-900 p-2 rounded-xl cursor-pointer shadow-[0_0_8px_white]"
       >
         <Menu />
       </button>

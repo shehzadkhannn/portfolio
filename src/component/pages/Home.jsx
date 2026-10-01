@@ -2,7 +2,7 @@ import Profile from "../../assets/shazy.jpeg";
 import ZoomIn from "../animation/ZoomIn";
 const Home = () => {
   return (
-    <div className="text-white mb-10 md:mb-40 flex flex-col-reverse px-5 justify-center items-center lg:flex-row ">
+    <div className="text-white mb-8 md:mb-25 flex flex-col-reverse px-5 justify-center items-center lg:flex-row ">
       <div className="mt-5 md:mt-1">
         <p className="bg-gray-800 px-5 py-3 rounded-4xl inline border-2 border-gray-400  ">
           Hello!
@@ -45,7 +45,7 @@ const Home = () => {
           </div>
         </ZoomIn>
       </div>
-      <div className="p-5 w-full  lg:p-10 m-2 border-2 md:rounded-full rounded-3xl border-amber-50 shrink-0 shadow-[0_0_20px_rgba(255,255,255,0.7)] ">
+      <div className="p-5 w-full md:w-fit  lg:p-10 m-2 border-2 md:rounded-full rounded-3xl border-amber-50 shrink-0 md:shadow-[0_0_20px_rgba(255,255,255,0.7)] shadow-[0_0_10px_rgba(255,255,255,0.7)] ">
         <ZoomIn>
           {" "}
           <img
