@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <div className="sticky top-0 z-20 flex justify-between p-4 bg-black text-white">
       <div className="flex ">
-        <div className=" bg-blue-600 rounded-xl py-1 px-3 flex items-center justify-center lg:text-3xl md:text-2xl text-1.5xl">
+        <div className=" bg-orange-500 rounded-xl py-1 px-3 flex items-center justify-center lg:text-3xl md:text-2xl text-1.5xl">
           M
         </div>
         <div className="px-3">
